@@ -1,0 +1,36 @@
+{
+  "recommendations": [
+    // テキストファイルの形式を自動で統一
+    "EditorConfig.EditorConfig",
+    // スペルチェッカ
+    "streetsidesoftware.code-spell-checker",
+    // 開いているファイルをエクスプローラでフォーカスする
+    "smulyono.reveal",
+    // Git の拡張機能
+    "eamodio.gitlens",
+    // Git の拡張機能
+    "mhutchie.git-graph",
+
+    // markdown ファイルのサポート
+    "yzhang.markdown-all-in-one",
+    // yaml ファイルのサポート
+    "redhat.vscode-yaml",
+    // toml ファイルのサポート
+    "bungcip.better-toml",
+    // json5 ファイルのサポート
+    "mrmlnc.vscode-json5",
+    // docker 系ファイルのサポート
+    "ms-azuretools.vscode-docker",
+    // dotenv ファイルのサポート
+    "mikestead.dotenv",
+
+    // JavaScript 等の整形ツール
+    "esbenp.prettier-vscode",
+    // JavaScript 等の静的解析ツール
+    "dbaeumer.vscode-eslint",
+    // カラーコードをハイライトする
+    "naumovs.color-highlight",
+    // HTML 等のタグの編集をアシストする拡張
+    "formulahendry.auto-rename-tag"
+  ]
+}

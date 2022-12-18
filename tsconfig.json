@@ -1,0 +1,313 @@
+// TypeScript の設定ファイル
+// cf. https://www.typescriptlang.org/ja/tsconfig
+{
+  "compilerOptions": {
+    /*
+     * Projects
+     */
+    // インクリメンタルコンパイルを有効にする。
+    // これを有効にすると、TypeScript はコンパイルで得られた情報を tsbuildinfo に保存するようになり、
+    // 次回以降のコンパイルでは、前回コンパイルとの差分に基づいて処理を短縮する。
+    // "incremental": true,
+
+    // プロジェクト参照は巨大な TypeScript プロジェクトをいくつかのサブプロジェクトに分割し、
+    // コンパイルのパフォーマンスを向上させる機能である。
+    // プロジェクト参照ではサブプロジェクトごとに tsconfig.json を作成する。
+    // このオプションはこのプロジェクトがサブプロジェクトであることを明示する。
+    // "composite": true,
+
+    // インクリメンタルコンパイルに使用する tsbuildinfo ファイルのパスを指定する。
+    // "tsBuildInfoFile": "./.tsbuildinfo",
+
+    // プロジェクト参照のコードジャンプにおいて、型定義ファイルではなくソースコードを参照することができるが、この機能を無効化する
+    // "disableSourceOfProjectReferenceRedirect": true,
+
+    // プロジェクト参照を使用しているとき、このプロジェクトを検索対象外にする。
+    // "disableSolutionSearching": true,
+
+    // プロジェクト参照を使用しているとき、すべてのプロジェクトを読み込むのではなく、必要に応じて読み込む。
+    // "disableReferencedProjectLoad": true,
+
+    /*
+     * Language and Environment
+     */
+    // TypeScript が出力する JavaScript の ECMAScript バージョンを指定する。
+    // 実行環境に合わせて適切なバージョンを選べぶべき。
+    // ここでは Node.js 16 に合わせて設定する。
+    "target": "es2021",
+
+    // 実行環境で使用できる組み込みライブラリを指定する。
+    // デフォルトで target から適切な値が設定される。
+    // ここで指定したライブラリの型定義が読み込まれ、TypeScript から利用できる。
+    // "lib": [],
+
+    // JSX のトランスパイル方法を指定する。
+    // React など JSX を使用するプロジェクトで適切に設定する。
+    // "jsx": "preserve",
+
+    // デコレータ機能を利用可能にする。
+    // "experimentalDecorators": true,
+
+    // デコレータが付与されたとき、型情報を生成して実行時に参照可能にする。
+    // "emitDecoratorMetadata": true,
+
+    // JSX をトランスパイルするときに使う関数を指定する。
+    // デフォルトは React.createElement
+    // "jsxFactory": "",
+
+    // JSX フラグメントをトランスパイルするときに使う関数を指定する。
+    // デフォルトは React.Fragment
+    // "jsxFragmentFactory": "",
+
+    // tsconfig の jsx が react-jsx であるときに、jsx, jsxs ファクトリ関数をインポートするモジュールを指定する。
+    // デフォルトは react
+    // "jsxImportSource": "",
+
+    // この設定よりも jsxFactory を使うほうが望ましい。
+    // JSX のトランスパイルで createElement を呼び出すオブジェクトを指定する。
+    // "reactNamespace": "",
+
+    // 実行環境の組み込みライブラリの型定義を一切読み込まない。
+    // "noLib": true,
+
+    // クラスフィールドを定義するときの振る舞いに関して ECMAScript 準拠のコードを生成する。
+    // これは TypeScript が先行して取り込んだ機能で、ECMAScript が後追いで仕様を策定した。
+    // 両者の仕様が異なるため、このようなオプションが用意された。
+    "useDefineForClassFields": true,
+
+    // TypeScript ファイルがモジュールモードかスクリプトモードかの判定方法を指定する。
+    // デフォルトは auto
+    // "moduleDetection": "auto",
+
+    /*
+     * Modules
+     */
+    // TypeScript が出力するコードのモジュールシステムを指定する。
+    // Node.js 用に設定する。
+    "module": "commonjs",
+
+    // ソースコードのルートディレクトリを指定する。
+    // コンパイル先はこのルートと同じフォルダ構造になる。
+    "rootDir": "./src",
+
+    // node_modules を検索する方法を指定する。
+    "moduleResolution": "node",
+
+    // 絶対パス import の解決に使用するディレクトリを指定する。
+    // これを設定しても TypeScript は import パスを書き換えることはしないので注意。
+    // 別途、実行時にパスを解決する設定をいれるか、ビルド時にパスをリライトするツールを使用しなければならない。
+    // cf. https://github.com/microsoft/TypeScript/issues/10866
+    // "baseUrl": "./",
+
+    // import パスのエイリアスを設定する。
+    // baseUrl と同様に注意が必要である。
+    // "paths": {},
+
+    // ソースツリーのルートを複数指定する。
+    // TypeScript は複数のルートを重ね合わせた仮想的なソースツリーに対してモジュールを解決する。
+    // "rootDirs": [],
+
+    // 型定義ファイルを検索するディレクトリを指定する。
+    // デフォルトでは node_modules/@types などが含まれる。
+    // "typeRoots": [],
+
+    // 通常 TypeScript は typeRoots 配下のすべての型定義を読み込むが、
+    // 明示的に指定したパッケージの型定義のみ読み込むように指定できる。
+    // "types": [],
+
+    // import なしに UMD モジュールを使用することを許す。
+    // "allowUmdGlobalAccess": true,
+
+    // モジュール解決に使用可能なサフィックスを指定する。
+    // foo によって foo.native.ts などを import できる。
+    // "moduleSuffixes": [],
+
+    // JSON を import することを許す。
+    // "resolveJsonModule": true,
+
+    // TypeScript に明示的に指定されたファイルのみを扱う。
+    // "noResolve": true,
+
+    /*
+     * JavaScript Support
+     */
+    // JavaScript の使用を許す。
+    // "allowJs": true,
+
+    // JavaScript に対して型検査する。
+    // "checkJs": true,
+
+    // 型定義ファイルが提供されないとき node_modules の JavaScript を読み込む深さを指定する。
+    // "maxNodeModuleJsDepth": 1,
+
+    /*
+     * Emit
+     */
+    // 型定義ファイルを出力する。
+    // "declaration": true,
+
+    // 型定義ファイルとソースコードとのソースマップを作成する。
+    // プロジェクト参照を使うときに推奨される。
+    // "declarationMap": true,
+
+    // 型定義のみを出力する。
+    // "emitDeclarationOnly": true,
+
+    // ソースマップを出力する。
+    "sourceMap": true,
+
+    // 単一ファイルにコンパイルする。
+    // モジュールが system または amd のときに使用できる。
+    // "outFile": "./",
+
+    // 出力先のディレクトリを指定する。
+    "outDir": "./dist",
+
+    // コメントを除去する。
+    "removeComments": true,
+
+    // 型検査のみ行い、ファイルを生成しない。
+    // "noEmit": true,
+
+    // トランスパイルのためのヘルパをインラインで生成する代わりに tslib から import する。
+    // 実行環境で tslib モジュールが使用できる必要がある。
+    // "importHelpers": true,
+
+    // import した値を型としてのみ使用しているときの振る舞いを指定する。
+    // デフォルトでは import を削除する。
+    // "importsNotUsedAsValues": "remove",
+
+    // ES5 向けにイテレータを正確にトランスパイルする。
+    // "downlevelIteration": true,
+
+    // デバッガーがソースコードを探すために使用するパスを指定する。
+    // "sourceRoot": "",
+
+    // デバッガーがソースマップを探すために使用するパスを指定する。
+    // "mapRoot": "",
+
+    // 出力ファイルにソースマップをインラインで含める。
+    // "inlineSourceMap": true,
+
+    // ソースマップに元のソースコードを含める。
+    // "inlineSources": true,
+
+    // 出力ファイルに BOM を含める。
+    // "emitBOM": true,
+
+    // 出力ファイルの改行コードを指定する。
+    // "newLine": "crlf",
+
+    // JSDoc で @internal 指定されたコードは型定義ファイルに含めない。
+    // "stripInternal": true,
+
+    // トランスパイルのためのヘルパを生成せず、また tslib を import もしない。
+    // グローバルスコープに自前でヘルパを用意する必要がある。
+    // "noEmitHelpers": true,
+
+    // コンパイルエラーで一切ファイルを出力しない。
+    // "noEmitOnError": true,
+
+    // enum の型定義ファイルにその定数値を含める。
+    // "preserveConstEnums": true,
+
+    // 型定義ファイルを出力先ディレクトリを指定する。
+    // "declarationDir": "./",
+
+    // 未使用にみえる値の import を削除しない。
+    // "preserveValueImports": true,
+
+    /*
+     * Interop Constraints
+     */
+    // 各 TypeScript ファイルをシングルファイルでトランスパイルできるよう、 enum や namespace の使用を制限する。
+    // cf. https://www.typescriptlang.org/tsconfig#isolatedModules
+    "isolatedModules": true,
+
+    // ESM と commonjs の相互運用性を考慮してモジュール解決する。
+    // 1 の代わりに 2 のスタイルでモジュール解決できるようになる。
+    // 1. import * as React from "react"
+    // 2. import React from "react"
+    // "allowSyntheticDefaultImports": true,
+
+    // ESM と commonjs の相互運用性を考慮してトランスパイルする。
+    // これを指定することで allowSyntheticDefaultImports も有効になる。
+    "esModuleInterop": true,
+
+    // シンボリックリンクにおいて、実体ではなくリンクの位置を基準にモジュール解決する。
+    // "preserveSymlinks": true,
+
+    // ファイル名の大文字小文字を区別する。
+    "forceConsistentCasingInFileNames": true,
+
+    /*
+     * Type Checking
+     */
+    // 型検査を厳しくするオプションを一括で有効にする。
+    // "strict": true
+
+    // 暗黙的な (型を指定しないことによる) any 型を禁止する。
+    "noImplicitAny": true,
+
+    // null や undefined をその他の型と区別して厳格に型検査する。
+    // 例えば string 型に null を割り当てることを許さない。
+    "strictNullChecks": true,
+
+    // 関数型に関して厳格に型検査する。
+    "strictFunctionTypes": true,
+
+    // 関数に対する call, bind 呼び出しに関して厳格に型検査する。
+    "strictBindCallApply": true,
+
+    // クラスのプロパティ初期化漏れについて厳格に型検査する。
+    "strictPropertyInitialization": true,
+
+    // any 型に推論される暗黙の this 使用を許さない。
+    "noImplicitThis": true,
+
+    // catch した値は unknown 型として扱う。
+    "useUnknownInCatchVariables": true,
+
+    // ECMAScript の strict mode にする。
+    "alwaysStrict": true,
+
+    // 未使用変数を許さない。
+    // "noUnusedLocals": true,
+
+    // 未使用パラーメタを許さない。
+    // "noUnusedParameters": true,
+
+    // オプショナルなプロパティと undefined を含むプロパティ を区別して厳格に型検査する。
+    // "exactOptionalPropertyTypes": true,
+
+    // 暗黙の return を許さない。
+    "noImplicitReturns": true,
+
+    // switch 文で break のない case を許さない。
+    // "noFallthroughCasesInSwitch": true,
+
+    // インデックスシグネチャでのアクセスで undefined を考慮して厳格に型検査する。
+    "noUncheckedIndexedAccess": true,
+
+    // 暗黙のオーバーライドを禁止し、override キーワードの使用を強制する。
+    "noImplicitOverride": true,
+
+    // インデックスシグネチャに対してプロパティ構文でのアクセスを禁止する。
+    "noPropertyAccessFromIndexSignature": true,
+
+    // 未使用のラベルを許す。
+    // "allowUnusedLabels": true
+
+    // 到達不能コードを許す。
+    // "allowUnreachableCode": true,
+
+    /*
+     * Completeness
+     */
+    // 標準ライブラリの型定義ファイルに対する型検査を行わない。
+    // "skipDefaultLibCheck": true,
+
+    // 型定義ファイルに対する型検査を行わない。
+    "skipLibCheck": true
+  }
+}

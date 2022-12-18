@@ -1,0 +1,11 @@
+# ESLint の設定ファイル
+# ESLint を使うと JavaScript や TypeScript を静的解析して問題のあるコードを検出できる。
+
+# プロジェクトのルートの設定ファイルであることを示す。
+# これ以上親ディレクトリを辿って設定ファイルを探さなくてよいことを ESLint に伝える。
+root: true
+
+# 設定ファイルを継承することで一括でルールを有効にする。
+extends:
+  # cf. https://github.com/somq14/eslint-config
+  - "@somq14/eslint-config"

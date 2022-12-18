@@ -1,0 +1,19 @@
+# Git にコミットしないファイルを指定する設定ファイル
+# cf. https://qiita.com/anqooqie/items/110957797b3d5280c44f
+# cf. https://git-scm.com/docs/gitignore
+
+node_modules/
+
+# yarn 向け設定
+# cf. https://yarnpkg.com/getting-started/qa#which-files-should-be-gitignored
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+dist/
+coverage/
+*.tsbuildinfo

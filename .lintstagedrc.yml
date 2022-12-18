@@ -1,0 +1,9 @@
+# lint-staged の設定ファイル
+# lint-staged を使うと git add されたファイルに対してコマンドを実行することができる。
+# cf. https://github.com/okonet/lint-staged
+
+# すべてのファイルに対して prettier を実行する。
+"*": prettier --ignore-path .gitignore --ignore-unknown
+
+# JavaScript や TypeScript に対して eslint を実行する。
+"*.{js,jsx,cjs,mjs,ts,tsx}": eslint --ignore-path .gitignore --max-warnings 0

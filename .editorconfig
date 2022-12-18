@@ -1,0 +1,24 @@
+# EditorConfig の設定ファイル
+# EditorConfig はエディタのプラグインであり、ファイル保存時にそのスタイルを統一してくれる
+# cf. https://qiita.com/naru0504/items/82f09881abaf3f4dc171
+# cf. https://editorconfig.org/
+
+# この .editorconfig ファイルをプロジェクトのルートに設定する。
+# あるファイルのスタイルをチェックするとき、EditorConfig は親ディレクトリを順に辿ることで .editorconfig ファイルを探す。
+# EditorConfig は root = true がある .editorconfig をみつけると、その検索が停止する。
+root = true
+
+# 以降はすべてのファイルに適用される設定
+[*]
+# 文字コードを UTF-8 にする
+charset = utf-8
+# 改行コードを LF にする
+end_of_line = lf
+# ファイルの末尾は改行で終わる
+insert_final_newline = true
+# 行末の空白を除去する
+trim_trailing_whitespace = true
+# タブ文字ではなく空白文字でインデントする
+indent_style = space
+# インデント幅を設定する
+indent_size = 2

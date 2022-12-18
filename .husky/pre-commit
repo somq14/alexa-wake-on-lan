@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# Git Hook を使うことでコミットのときにこのシェルスクリプトを実行する。
+# Git Hook の設定は husky を使う。
+# cf. https://typicode.github.io/husky/#/
+
+# lint-staged を呼び出す。
+yarn lint-staged
