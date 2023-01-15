@@ -1,23 +1,19 @@
 {
-  "name": "typescript-template",
+  "name": "alexa-wake-on-lan",
   "packageManager": "yarn@3.3.0",
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "postinstall": "husky install",
-    "clean": "rm -r dist",
     "format": "prettier --ignore-path .gitignore --ignore-unknown --check \"**/*\"",
-    "lint": "eslint --ignore-path .gitignore --max-warnings 0 \"**/*.{js,jsx,cjs,mjs,ts,tsx}\"",
-    "build": "tsc",
-    "test": "jest"
+    "lint": "yarn workspaces foreach -pvt run lint",
+    "type-check": "yarn workspaces foreach -pvt run type-check",
+    "test": "yarn workspaces foreach -pvt run test"
   },
   "devDependencies": {
-    "@somq14/eslint-config": "somq14/eslint-config#v1.1.0",
-    "@types/jest": "29.2.4",
-    "eslint": "8.30.0",
     "husky": "8.0.2",
-    "jest": "29.3.1",
     "lint-staged": "13.1.0",
-    "prettier": "2.8.1",
-    "ts-jest": "29.0.3",
-    "typescript": "4.9.4"
+    "prettier": "2.8.1"
   }
 }

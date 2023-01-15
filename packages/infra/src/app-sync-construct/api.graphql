@@ -1,0 +1,27 @@
+type Device {
+  id: ID!
+  name: String!
+  macAddress: String!
+  description: String
+}
+
+type Mutation {
+  createDevice(name: String!, macAddress: String!, description: String): Device!
+  updateDevice(
+    id: ID!
+    name: String!
+    macAddress: String!
+    description: String
+  ): Device!
+  deleteDevice(id: ID!): Device!
+}
+
+type Query {
+  device(id: ID!): Device!
+  devices: [Device!]!
+}
+
+schema {
+  query: Query
+  mutation: Mutation
+}

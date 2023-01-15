@@ -1,0 +1,3 @@
+root: true
+extends:
+  - "@somq14/eslint-config/react"

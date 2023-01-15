@@ -15,5 +15,9 @@ node_modules/
 !.yarn/versions
 
 dist/
+build/
 coverage/
 *.tsbuildinfo
+cdk.out/
+
+.env

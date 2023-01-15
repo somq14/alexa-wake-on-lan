@@ -14,5 +14,5 @@ jobs:
       - run: yarn install
       - run: yarn format
       - run: yarn lint
-      - run: yarn build
+      - run: yarn type-check
       - run: yarn test

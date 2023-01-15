@@ -1,0 +1,22 @@
+.lwaButton {
+  background: initial;
+  border: initial;
+  padding: 0;
+
+  cursor: pointer;
+  width: 195px;
+  height: 46px;
+
+  background-size: cover;
+  background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/lwa/btnLWA_gold_390x92.png);
+
+  align-self: center;
+}
+
+.lwaButton:hover {
+  transform: scale(1.02);
+}
+
+.lwaButton:active {
+  background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/lwa/btnLWA_gold_390x92_pressed.png);
+}
