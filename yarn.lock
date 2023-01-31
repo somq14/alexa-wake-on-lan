@@ -24,7 +24,7 @@ __metadata:
   resolution: "@alexa-wake-on-lan/skill@workspace:packages/skill"
   dependencies:
     "@aws-sdk/client-dynamodb": 3.231.0
-    axios: 1.2.1
+    axios: 1.2.6
     esbuild: 0.16.17
     rimraf: 4.0.4
     source-map-support: 0.5.21
@@ -7543,14 +7543,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axios@npm:1.2.1":
-  version: 1.2.1
-  resolution: "axios@npm:1.2.1"
+"axios@npm:1.2.6":
+  version: 1.2.6
+  resolution: "axios@npm:1.2.6"
   dependencies:
     follow-redirects: ^1.15.0
     form-data: ^4.0.0
     proxy-from-env: ^1.1.0
-  checksum: c4dc4e119064c9aed09a3de309bedb797a139a6fb372223aafe3e0c10a7d4a14e4d3e9c9d309467fadb9d2b490b891ee3df96ef5b55716bb971910466ff9f0c5
+  checksum: cbd19be3e07d2fbb6a0b126e49880cecdd44c1f68496ae0e7d21e7dc1c31fd59703a8eec51c9fd69034344f519cc1cdc22c22153131063657c4cef50195f0c00
   languageName: node
   linkType: hard
 
