@@ -7,7 +7,7 @@
     "@fontsource/material-icons": "4.5.4",
     "@fontsource/noto-sans-jp": "4.5.12",
     "@fontsource/noto-sans-mono": "4.5.13",
-    "aws-amplify": "5.0.8",
+    "aws-amplify": "5.0.12",
     "clsx": "1.2.1",
     "formik": "2.2.9",
     "graphql": "16.6.0",
