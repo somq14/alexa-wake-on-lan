@@ -37,7 +37,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@alexa-wake-on-lan/web@workspace:packages/web"
   dependencies:
-    "@apollo/client": 3.7.4
+    "@apollo/client": 3.7.6
     "@fontsource/material-icons": 4.5.4
     "@fontsource/noto-sans-jp": 4.5.12
     "@fontsource/noto-sans-mono": 4.5.13
@@ -85,9 +85,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@apollo/client@npm:3.7.4":
-  version: 3.7.4
-  resolution: "@apollo/client@npm:3.7.4"
+"@apollo/client@npm:3.7.6":
+  version: 3.7.6
+  resolution: "@apollo/client@npm:3.7.6"
   dependencies:
     "@graphql-typed-document-node/core": ^3.1.1
     "@wry/context": ^0.7.0
@@ -117,7 +117,7 @@ __metadata:
       optional: true
     subscriptions-transport-ws:
       optional: true
-  checksum: 1a51451577c241decc3caac2eb447eb2a4de212eab4346e9fe4fe9c5ec0f6484a4dac095a8200a16f5d1cb5b8372d7b5352aa9e9114dbde0fae67a1a27d87f6c
+  checksum: 88b78b90090aa45cdc0d175784ac4fe2a5ed7d20bc8fe38357f286d25062ffdf9e259881ac3848e38cf3d0dc9a3f5752ab058a6db0c9eca7c8d7bcb25ef36a52
   languageName: node
   linkType: hard
 
