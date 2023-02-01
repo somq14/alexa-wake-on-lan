@@ -18,11 +18,19 @@ export const Header: React.FC<HeaderProps> = (props) => {
   return (
     <header className={clsx(styles.container, props.className)}>
       <Link to="/">アレクサ、パソコンつけて</Link>
-      {isSignedIn && (
-        <IconButton onClick={signOut}>
-          <Icon name="logout" />
-        </IconButton>
-      )}
+      <div className="flex-row align-center gap-2">
+        <a
+          className={styles.github}
+          href="https://github.com/somq14/alexa-wake-on-lan/blob/develop/README.md"
+        >
+          <img src="/github-mark.png" alt="github" />
+        </a>
+        {isSignedIn && (
+          <IconButton onClick={signOut}>
+            <Icon name="logout" />
+          </IconButton>
+        )}
+      </div>
     </header>
   );
 };
