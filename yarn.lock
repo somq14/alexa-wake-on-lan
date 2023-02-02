@@ -12,7 +12,7 @@ __metadata:
     "@types/node": 16.18.11
     aws-cdk: 2.62.2
     aws-cdk-lib: 2.62.2
-    constructs: 10.1.234
+    constructs: 10.1.238
     dotenv-cli: 7.0.0
     ts-node: 10.9.1
     typescript: 4.9.4
@@ -8404,10 +8404,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"constructs@npm:10.1.234":
-  version: 10.1.234
-  resolution: "constructs@npm:10.1.234"
-  checksum: 5af6e17931df2d83413692fd5552f8eca13fd23d82b9286f4a799aa1d882a8898c8427fd63808fd4b98f6016bdcd188711e5fc416e872de8d9344305cb3c9e7e
+"constructs@npm:10.1.238":
+  version: 10.1.238
+  resolution: "constructs@npm:10.1.238"
+  checksum: abc4b1d5a6338eb3d8546172c146df8a9714be3b045a91425e7c60eb1596fb9470298713e9673c575c5670f4ee3bb82ba7ec82a4fbe5bf478afd050ca2da4d75
   languageName: node
   linkType: hard
 

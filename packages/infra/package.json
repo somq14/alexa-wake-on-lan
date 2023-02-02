@@ -6,7 +6,7 @@
   },
   "dependencies": {
     "aws-cdk-lib": "2.62.2",
-    "constructs": "10.1.234"
+    "constructs": "10.1.238"
   },
   "devDependencies": {
     "@types/node": "16.18.11",
