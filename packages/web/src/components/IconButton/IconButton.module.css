@@ -1,0 +1,28 @@
+.iconButton {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 999px;
+  width: 40px;
+  height: 40px;
+}
+
+.iconButton:hover::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 999px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.iconButton:active::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 999px;
+  background-color: rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,22 @@
+{
+  "name": "alexa-wake-on-lan",
+  "packageManager": "yarn@3.3.0",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "postinstall": "husky install",
+    "format": "prettier --ignore-path .gitignore --ignore-unknown --check \"**/*\"",
+    "lint": "yarn workspaces foreach -pvt run lint",
+    "type-check": "yarn workspaces foreach -pvt run type-check",
+    "test": "yarn workspaces foreach -pvt run test"
+  },
+  "devDependencies": {
+    "husky": "8.0.2",
+    "lint-staged": "13.1.0",
+    "prettier": "2.8.1"
+  },
+  "resolutions": {
+    "eslint-plugin-react": "7.31.11"
+  }
+}

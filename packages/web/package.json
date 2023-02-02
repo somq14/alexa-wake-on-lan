@@ -1,0 +1,50 @@
+{
+  "name": "@alexa-wake-on-lan/web",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@apollo/client": "3.7.4",
+    "@fontsource/material-icons": "4.5.4",
+    "@fontsource/noto-sans-jp": "4.5.12",
+    "@fontsource/noto-sans-mono": "4.5.13",
+    "aws-amplify": "5.0.8",
+    "clsx": "1.2.1",
+    "formik": "2.2.9",
+    "graphql": "16.6.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-router-dom": "6.6.2",
+    "the-new-css-reset": "1.8.3",
+    "web-vitals": "2.1.4",
+    "zod": "3.20.2",
+    "zod-formik-adapter": "1.2.0"
+  },
+  "devDependencies": {
+    "@somq14/eslint-config": "somq14/eslint-config#v1.1.0",
+    "@types/node": "^16.18.11",
+    "@types/react": "^18.0.26",
+    "@types/react-dom": "^18.0.10",
+    "eslint": "^8.32.0",
+    "react-scripts": "5.0.1",
+    "typescript": "^4.9.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "eject": "react-scripts eject",
+    "lint": "eslint --ignore-path .gitignore --max-warnings 0 \"**/*.{js,jsx,cjs,mjs,ts,tsx}\"",
+    "type-check": "tsc --noEmit"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

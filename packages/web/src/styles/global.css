@@ -1,0 +1,16 @@
+html,
+body,
+div#root {
+  height: 100%;
+}
+
+body {
+  background-color: #fafafa;
+  color: #303030;
+  font-family: "Noto Sans JP";
+}
+
+div#root {
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,6 @@
+{
+  "app": "ts-node src/main.ts",
+  "watch": {
+    "include": ["src/**/*.{ts,js}"]
+  }
+}

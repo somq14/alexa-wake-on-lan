@@ -1,0 +1,8 @@
+# prettier の設定ファイル
+# prettier を使うと、テキストファイルを整形し、スタイルを統一できる
+# cf. https://prettier.io/docs/en/options.html
+
+# 末尾のカンマを積極的に挿入する
+# 行の入れ替えがしやすくなること、Git の差分がきれいになることから設定
+# cf. https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Trailing_commas
+trailingComma: all

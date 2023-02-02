@@ -1,0 +1,44 @@
+.button {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  position: relative;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #00a0a0;
+}
+
+.button:hover {
+  transform: scale(1.005);
+}
+
+.button:active {
+  transform: scale(1);
+}
+
+.button:active::after,
+.button:disabled::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.loading {
+  animation: kfs 1.2s linear infinite;
+}
+
+@keyframes kfs {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}

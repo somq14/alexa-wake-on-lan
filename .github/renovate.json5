@@ -1,0 +1,54 @@
+// renovate の設定ファイル
+// renovate を使うと、依存ライブラリのアップデートを検出し Github に PR を作成することができる。
+// cf. https://docs.renovatebot.com/configuration-options/
+{
+  extends: [
+    // おすすめ設定を継承する。
+    // cf. https://docs.renovatebot.com/presets-config/#configbase
+    "config:base",
+    // 東京のタイムゾーンを使う
+    ":timezone(Asia/Tokyo)",
+    // 1 時間に作成する PR の個数を制限しない。
+    ":prHourlyLimitNone",
+    // 1 週間に 1 回ロックファイルを再作成する。
+    ":maintainLockFilesWeekly",
+  ],
+  // develop ブランチ向けに PR を作成する。
+  baseBranches: ["develop"],
+  // コミットコメントにプレフィックスを付ける。
+  commitMessagePrefix: "⬆️ ",
+  // PR にラベルをつける。
+  labels: ["dependency"],
+
+  // マイナーバージョンとパッチバージョンの PR を分けてそれぞれ作成する。
+  separateMinorPatch: true,
+
+  // パッケージごとにルールを指定
+  packageRules: [
+    {
+      // リント関係のパッケージはまとめる
+      groupName: "lint dependencies",
+      matchPackageNames: ["prettier", "eslint", "@somq14/eslint-config"],
+    },
+    {
+      // テスト関係のパッケージはまとめる
+      groupName: "test dependencies",
+      matchPackageNames: ["jest", "@types/jest", "ts-jest"],
+    },
+    {
+      // CI で動作確認ができるパッケージは自動マージの対象にする
+      matchPackageNames: [
+        "yarn",
+        "prettier",
+        "eslint",
+        "@somq14/eslint-config",
+        "jest",
+        "@types/jest",
+        "ts-jest",
+        "typescript",
+      ],
+      matchUpdateTypes: ["patch"],
+      automerge: true,
+    },
+  ],
+}

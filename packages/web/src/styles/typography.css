@@ -1,0 +1,46 @@
+.text-sans {
+  font-family: "Noto Sans JP";
+}
+.text-mono {
+  font-family: "Noto Sans Mono";
+}
+
+.text-primary {
+  color: #303030;
+}
+.text-secondary {
+  color: #707070;
+}
+.text-error {
+  color: #d04040;
+}
+.text-link {
+  color: #0085c9;
+  text-decoration: underline;
+}
+.text-underline {
+  text-decoration: underline;
+}
+
+.text-xxs {
+  font-size: 0.7rem;
+}
+.text-xs {
+  font-size: 0.8rem;
+}
+.text-sm {
+  font-size: 0.9rem;
+}
+.text-md {
+  font-size: 1rem;
+}
+.text-lg {
+  font-size: 1.2rem;
+}
+.text-xl {
+  font-size: 1.4rem;
+}
+
+.text-center {
+  text-align: center;
+}

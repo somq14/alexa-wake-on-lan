@@ -1,0 +1,6 @@
+# Git にコミットするファイルの改行コードを統一するための設定ファイル
+# cf. https://kiririmode.hatenablog.jp/entry/20170416/1492300735
+# cf. https://git-scm.com/docs/gitattributes
+
+# ファイルがテキストファイルかどうかの判定を Git に任せ、改行コードを LF に統一する
+* text=auto

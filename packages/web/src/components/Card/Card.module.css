@@ -1,0 +1,19 @@
+.card {
+  padding: 16px;
+  background-color: #ffffff;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.clickable {
+  position: relative;
+}
+
+.clickable:hover {
+  transform: scale(1.005);
+}
+
+.clickable:active {
+  transform: scale(1);
+}

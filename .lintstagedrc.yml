@@ -1,0 +1,6 @@
+# lint-staged の設定ファイル
+# lint-staged を使うと git add されたファイルに対してコマンドを実行することができる。
+# cf. https://github.com/okonet/lint-staged
+
+# すべてのファイルに対して prettier を実行する。
+"*": prettier --ignore-path .gitignore --ignore-unknown
