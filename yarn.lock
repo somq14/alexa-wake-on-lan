@@ -9,7 +9,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@alexa-wake-on-lan/infra@workspace:packages/infra"
   dependencies:
-    "@types/node": 16.18.11
+    "@types/node": 18.15.3
     aws-cdk: 2.62.2
     aws-cdk-lib: 2.62.2
     constructs: 10.1.234
@@ -42,7 +42,7 @@ __metadata:
     "@fontsource/noto-sans-jp": 4.5.12
     "@fontsource/noto-sans-mono": 4.5.13
     "@somq14/eslint-config": "somq14/eslint-config#v1.1.0"
-    "@types/node": ^16.18.11
+    "@types/node": ^18.0.0
     "@types/react": ^18.0.26
     "@types/react-dom": ^18.0.10
     aws-amplify: 5.0.8
@@ -6366,10 +6366,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:16.18.11, @types/node@npm:^16.18.11":
-  version: 16.18.11
-  resolution: "@types/node@npm:16.18.11"
-  checksum: 2a3b1da13063debe6e26f732defb5f03ef4ef732c3e08daba838d8850433bd00e537ce1a97ce9bcfc4b15db5218d701d1265fae94e0d6926906bec157e6b46e0
+"@types/node@npm:18.15.3, @types/node@npm:^18.0.0":
+  version: 18.15.3
+  resolution: "@types/node@npm:18.15.3"
+  checksum: 31b1d92475a82c30de29aa6c0771b18a276552d191283b4423ba2d61b3f01159bf0d02576c0b7cc834b043997893800db6bb47f246083ed85aa45e79c80875d7
   languageName: node
   linkType: hard
 
