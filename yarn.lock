@@ -10,8 +10,8 @@ __metadata:
   resolution: "@alexa-wake-on-lan/infra@workspace:packages/infra"
   dependencies:
     "@types/node": 16.18.11
-    aws-cdk: 2.62.2
-    aws-cdk-lib: 2.62.2
+    aws-cdk: 2.69.0
+    aws-cdk-lib: 2.69.0
     constructs: 10.1.234
     dotenv-cli: 7.0.0
     ts-node: 10.9.1
@@ -337,10 +337,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@aws-cdk/asset-awscli-v1@npm:^2.2.49":
-  version: 2.2.55
-  resolution: "@aws-cdk/asset-awscli-v1@npm:2.2.55"
-  checksum: 6771a07899d84c6e0293e17a5a771d30fd5c3cdf0eeaf2d024ae4fceadc6bed1ce8b0afd122e3d84885c2b17937d381023e4957e095e6b19f409059dde601412
+"@aws-cdk/asset-awscli-v1@npm:^2.2.97":
+  version: 2.2.105
+  resolution: "@aws-cdk/asset-awscli-v1@npm:2.2.105"
+  checksum: b1595ef4b706989818390be4dcf071d21babdf703de3ffc4d4cb3eb490fedff619637385ebf3275eea266d12a96f5e175f8080f3a425b979e8ca07cdc37c109b
   languageName: node
   linkType: hard
 
@@ -351,10 +351,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@aws-cdk/asset-node-proxy-agent-v5@npm:^2.0.38":
-  version: 2.0.42
-  resolution: "@aws-cdk/asset-node-proxy-agent-v5@npm:2.0.42"
-  checksum: dd06260cef7cd36928d63c93076bc57b1eb09946e4c1b32112c9898195264b0ca0508795dfabc7654b17225c719f58adf9c347ddd59861c340f6d8aa74800386
+"@aws-cdk/asset-node-proxy-agent-v5@npm:^2.0.77":
+  version: 2.0.84
+  resolution: "@aws-cdk/asset-node-proxy-agent-v5@npm:2.0.84"
+  checksum: c38f8e30615ac389630ed2ee3e3c17fa8f406de12ec2e13f49e53a3c749e48f97fed3b9fa3597cdf3e5d59e3326d2df2fb41804002f680c8392644304bb3ba94
   languageName: node
   linkType: hard
 
@@ -7519,31 +7519,31 @@ __metadata:
   languageName: node
   linkType: hard
 
-"aws-cdk-lib@npm:2.62.2":
-  version: 2.62.2
-  resolution: "aws-cdk-lib@npm:2.62.2"
+"aws-cdk-lib@npm:2.69.0":
+  version: 2.69.0
+  resolution: "aws-cdk-lib@npm:2.69.0"
   dependencies:
-    "@aws-cdk/asset-awscli-v1": ^2.2.49
+    "@aws-cdk/asset-awscli-v1": ^2.2.97
     "@aws-cdk/asset-kubectl-v20": ^2.1.1
-    "@aws-cdk/asset-node-proxy-agent-v5": ^2.0.38
+    "@aws-cdk/asset-node-proxy-agent-v5": ^2.0.77
     "@balena/dockerignore": ^1.0.2
     case: 1.6.3
     fs-extra: ^9.1.0
     ignore: ^5.2.4
     jsonschema: ^1.4.1
     minimatch: ^3.1.2
-    punycode: ^2.2.0
+    punycode: ^2.3.0
     semver: ^7.3.8
     yaml: 1.10.2
   peerDependencies:
     constructs: ^10.0.0
-  checksum: 10dab79dff6715c12e87dcfdf40549284b2454c7acefdff9f05d37c397bf7384adeece7a1cca056b3663153f4b06d87b6591d9ac4e57c61f259de2be2cf6c0de
+  checksum: 4010535a595deb1cad8d9ca91670fe188f811459df26b2191eecbe35801134943d610c9f66846946a854667791033ad6914cedf7effc33c879e6196a62faff7c
   languageName: node
   linkType: hard
 
-"aws-cdk@npm:2.62.2":
-  version: 2.62.2
-  resolution: "aws-cdk@npm:2.62.2"
+"aws-cdk@npm:2.69.0":
+  version: 2.69.0
+  resolution: "aws-cdk@npm:2.69.0"
   dependencies:
     fsevents: 2.3.2
   dependenciesMeta:
@@ -7551,7 +7551,7 @@ __metadata:
       optional: true
   bin:
     cdk: bin/cdk
-  checksum: 5c21f2993960ec9800b9818539c31fd8ee0e4135f37ad23758db8ae04018b8851c9401c06c6ddde24e71b5cd9d4078c1920dff59706e4c432008623a0add3574
+  checksum: 6fad34d74a33d4ef56ee919700f1b51fd2cfac4b929956e917b4d242b397885ad34c13ea71163e05a21a005d086e552d105c60cdc1d87df8034d5f9e3d68d74e
   languageName: node
   linkType: hard
 
@@ -14909,7 +14909,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"punycode@npm:^2.1.0, punycode@npm:^2.1.1, punycode@npm:^2.2.0":
+"punycode@npm:^2.1.0, punycode@npm:^2.1.1, punycode@npm:^2.3.0":
   version: 2.3.0
   resolution: "punycode@npm:2.3.0"
   checksum: 39f760e09a2a3bbfe8f5287cf733ecdad69d6af2fe6f97ca95f24b8921858b91e9ea3c9eeec6e08cede96181b3bb33f95c6ffd8c77e63986508aa2e8159fa200
