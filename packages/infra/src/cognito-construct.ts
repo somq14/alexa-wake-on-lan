@@ -63,6 +63,7 @@ export class CognitoConstruct extends Construct {
       supportedIdentityProviders: [
         cognito.UserPoolClientIdentityProvider.AMAZON,
       ],
+      refreshTokenValidity: cdk.Duration.days(10 * 365),
     });
     this.alexaClient.node.addDependency(loginWithAmazonIdentityProvider);
 
