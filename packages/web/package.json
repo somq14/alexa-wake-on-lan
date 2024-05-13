@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@apollo/client": "3.7.4",
+    "@apollo/client": "3.7.17",
     "@fontsource/material-icons": "4.5.4",
     "@fontsource/noto-sans-jp": "4.5.12",
     "@fontsource/noto-sans-mono": "4.5.13",
