@@ -17,6 +17,6 @@
     "prettier": "2.8.1"
   },
   "resolutions": {
-    "eslint-plugin-react": "7.31.11"
+    "eslint-plugin-react": "7.37.2"
   }
 }
